@@ -1,6 +1,7 @@
 
 function test(num) {
-    var regex = new RegExp(/^[0-9]*[1-9][0-9]*$/);
+    // var regex = new RegExp(/^[0-9]*[1-9][0-9]*$/);
+    var regex = /^[0-9]*[1-9][0-9]*$/;
     var i = 2;
     var handle = num;
     var arr = [];
