@@ -13,4 +13,4 @@ function chain(str,val){
 }
 let str = '1->2->3->3->4->5->3';
 let a = chain(str, 3 );
-console.log("输入：" + str + "\n" + "输出：" + a);
+console.log("输入：" + str + " 和 3\n" + "输出：" + a);
