@@ -6,8 +6,8 @@ function find_elem_index(arr, item) {
     arr.filter((elem, index, arr) => {
        if (elem === item) {
            result.push(index);
-        }
-       // return arr.indexOf(item);
+           // return arr.indexOf(item);
+       }
     });
      return result;
 }
