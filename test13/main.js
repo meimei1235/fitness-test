@@ -4,9 +4,21 @@
 例如：nums1 = [1, 2, 2, 1], nums2 = [2, 2], 返回 [2, 2].
 */
 function arrIntersection(arr1, arr2) {
-    return arr1.filter(item => {
-        return arr2.includes(item) == true;
-    });
+    let result = [];
+    let index1 = 0,
+        index2 = 0;
+    while (index1 < arr1.length && index2 < arr2.length) {
+        if (arr1[index1] > arr2[index2]) {
+            index2++;
+        } else if (arr1[index1] < arr2[index2]) {
+            index1++;
+        } else {
+            result.push(arr1[index1]);
+            index1++;
+            index2++;
+        }
+    }
+    return result;
 }
 let nums1 = [1, 2, 2, 1];
 let nums2 = [2, 2];
